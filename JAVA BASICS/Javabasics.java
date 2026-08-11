@@ -1378,8 +1378,9 @@
 // Scanner sc = new Scanner(System.in);
 // System.out.print("Enter a number: ");
 // int n = sc.nextInt();
-// int i = 1;
+
 // int sum = 0;
+// int i = 1;
 // while (i <= n) {
 // System.out.print(i + "+" + sum + "= ");
 // sum = sum + i;
@@ -1387,5 +1388,42 @@
 // i++;
 // }
 // System.out.println("The sum of the first 10 natural numbers is: " + sum);
+// System.out.println(i);
+// }
+// }
+
+// public class Javabasics {
+// public static void main(String[] args) {
+// for (int i = 0; i <= 5; i++) {
+// System.out.println("Hello World");
+// }
+
+// System.out.println(i);
+
+// }
+// }
+
+public class Javabasics {
+    public static void main(String[] args) {
+        int no = 10899;
+        while (no > 0) {
+            int lastdigit = no % 10;
+            System.out.print(lastdigit + "");
+            no = no / 10;
+        }
+    }
+}
+
+// rev of a no
+// public class Javabasics {
+// public static void main(String[] args) {
+// int no = 10899;
+// int rev = 0;
+// while (no > 0) {
+// int lastdigit = no % 10;
+// rev = rev * 10 + lastdigit;
+// no = no / 10;
+// }
+// System.out.println("The reverse of the number is: " + rev);
 // }
 // }
