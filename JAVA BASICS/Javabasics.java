@@ -1403,16 +1403,16 @@
 // }
 // }
 
-public class Javabasics {
-    public static void main(String[] args) {
-        int no = 10899;
-        while (no > 0) {
-            int lastdigit = no % 10;
-            System.out.print(lastdigit + "");
-            no = no / 10;
-        }
-    }
-}
+// public class Javabasics {
+//     public static void main(String[] args) {
+//         int no = 10899;
+//         while (no > 0) {
+//             int lastdigit = no % 10;
+//             System.out.print(lastdigit + "");
+//             no = no / 10;
+//         }
+//     }
+// }
 
 // rev of a no
 // public class Javabasics {
@@ -1427,3 +1427,24 @@ public class Javabasics {
 // System.out.println("The reverse of the number is: " + rev);
 // }
 // }
+
+//prime no
+import java.util.*;
+
+public class Javabasics {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n == 2) {
+            System.out.println("prime");
+        } else {
+            for (int i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    System.out.println("not prime");
+                    break;
+                }
+            }
+        }
+
+    }
+}
