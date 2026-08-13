@@ -1404,14 +1404,14 @@
 // }
 
 // public class Javabasics {
-//     public static void main(String[] args) {
-//         int no = 10899;
-//         while (no > 0) {
-//             int lastdigit = no % 10;
-//             System.out.print(lastdigit + "");
-//             no = no / 10;
-//         }
-//     }
+// public static void main(String[] args) {
+// int no = 10899;
+// while (no > 0) {
+// int lastdigit = no % 10;
+// System.out.print(lastdigit + "");
+// no = no / 10;
+// }
+// }
 // }
 
 // rev of a no
@@ -1428,23 +1428,69 @@
 // }
 // }
 
-//prime no
-import java.util.*;
+// prime no
+// import java.util.*;
 
-public class Javabasics {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        if (n == 2) {
-            System.out.println("prime");
-        } else {
-            for (int i = 2; i < n; i++) {
-                if (n % i == 0) {
-                    System.out.println("not prime");
-                    break;
-                }
-            }
-        }
+// public class Javabasics {
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// int n = sc.nextInt();
+// if (n == 2) {
+// System.out.println("prime");
+// } else {
+// for (int i = 2; i < n; i++) {
+// if (n % i == 0) {
+// System.out.println("not prime");
+// break;
+// }
+// }
+// }
 
-    }
-}
+// }
+// }
+
+// public class Javabasics {
+// public static void main(String[] args) {
+// for (int line = 0; line <= 5; line++) {
+// for (int star = 0; star <= line; star++) {
+// System.out.print("*");
+// }
+// System.out.println();
+// }
+// }
+// }
+
+// public class Javabasics {
+// public static void main(String args[]) {
+// for (int line = 1; line <= 5; line++) {
+// for (int star = 1; star <= (5 - line + 1); star++) {
+// System.out.print("*");
+// }
+// System.out.println();
+// }
+// }
+// }
+
+// public class Javabasics {
+// public static void main(String args[]) {
+// for (int line = 1; line <= 5; line++) {
+// for (int star = 1; star <= line; star++) {
+// System.out.print(star);
+// }
+// System.out.println();
+// }
+// }
+// }
+
+// public class Javabasics {
+// public static void main(String args[]) {
+// int num = 1;
+// for (int line = 1; line <= 5; line++) {
+// for (int star = 1; star <= line; star++) {
+// System.out.print(num + " ");
+// num++;
+// }
+// System.out.println();
+// }
+// }
+// }
