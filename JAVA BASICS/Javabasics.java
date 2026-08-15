@@ -1519,3 +1519,26 @@
 // }
 // }
 // }
+
+// public class Javabasics {
+// public static void main(String args[]) {
+// int main = 5; //no error
+// int String = 6;
+// int class =4; // error
+// System.out.print(main + String);
+// }
+// }
+
+//function 
+public class Javabasics {
+
+    public static void printHelloWorld() {
+        System.out.println("Hello World");
+    }
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+            printHelloWorld();
+        }
+    }
+}
