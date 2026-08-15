@@ -1529,16 +1529,16 @@
 // }
 // }
 
-//function 
-public class Javabasics {
+// function
+// public class Javabasics {
 
-    public static void printHelloWorld() {
-        System.out.println("Hello World");
-    }
+// public static void printHelloWorld() {
+// System.out.println("Hello World");
+// }
 
-    public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
-            printHelloWorld();
-        }
-    }
-}
+// public static void main(String[] args) {
+// for (int i = 0; i < 5; i++) {
+// printHelloWorld();
+// }
+// }
+// }
