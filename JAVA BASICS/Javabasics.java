@@ -1542,3 +1542,191 @@
 // }
 // }
 // }
+
+// public class Javabasics {
+// public static void add(int a , int b) {
+// int sum = a+b;
+// System.out.println("sum = "+ sum);
+// }
+// public static void main(String[] args) {
+// int a = 1;
+// int b = 2;
+// add(a,b);
+
+// }
+// }
+// public class Javabasics {
+// public static void add(int a , int b) {
+// int sum = a+b;
+// System.out.println("sum = "+ sum);
+// }
+// public static void main(String[] args) {
+// int a = 1;
+// int b = 2;
+// int s = add(a,b); // here we cant store it in the int
+// //"You're trying to store the result of add() inside an int, but add()
+// doesn't give me any result."
+// }
+// }
+
+// public class Javabasics {
+
+// public static int printHelloWorld() {
+// System.out.println("Hello World");
+// System.out.println("Hello World");
+// System.out.println("Hello World");
+// return 1;
+// }
+
+// public static void main(String[] args) {
+// int val = printHelloWorld();
+// System.out.println(val);
+// System.out.println(val);
+// }
+// int val = printHelloWorld();
+// ↓
+// Function starts
+// ↓
+// Print Hello World
+// ↓
+// Print Hello World
+// ↓
+// Print Hello World
+// ↓
+// return 1
+// ↓
+// 1 goes back to val
+// ↓
+// val = 1
+// The function executes its statements first, and when it reaches return, that
+// returned value is given back to the caller and can be stored in a variable.
+// // }
+
+// import java.util.*;
+
+// public class Javabasics {
+// public static int add(int num1, int num2) {
+// System.out.println("Addition");
+// int sum = num1 + num2;
+// return sum;
+// }
+
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// int a = sc.nextInt();
+// int b = sc.nextInt();
+// int sum = add(a, b);
+// System.out.println("Sum =" + sum);
+
+// }
+
+// }
+
+// public class Javabasics {
+// public static void main(String[] args) {
+// int a = 5;
+// int b= 4;
+// int temp = a;
+// a=b;
+// b=temp;
+// System.out.println("a =" +a);
+// System.out.println("b ="+b);
+// }
+// }
+
+// public class Javabasics {
+// public static void swap(int a, int b) {
+// int temp = a;
+// a = b;
+// b = temp;
+// }
+
+// public static void main(String[] args) {
+// int a = 5;
+// int b = 4;
+// swap(a, b);
+// System.out.println("a =" + a);
+// System.out.println("b =" + b);
+// }
+// } // A Java method can return only one value, and changing primitive
+// parameters inside the method doesn't change the original variables.
+
+// multiply
+// import java.util.*;
+
+// public class Javabasics {
+// public static int multiply(int a, int b) {
+// int mul = a * b;
+// return mul;
+// }
+
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// int a = sc.nextInt();
+// int b = sc.nextInt();
+// int mul = multiply(a, b);
+// System.out.println("Multiplication =" + mul);
+// System.out.println(multiply(10, 20));
+// }
+// }
+
+// //factorial
+// public class Javabasics {
+// public static int factorial(int n) {
+// int fact = 1;
+// for (int i = 1; i <= n; i++) {
+// fact = fact * i;
+// }
+// return fact;
+// }
+
+// public static void main(String[]args){
+// System.out.println(factorial(5));
+// }
+// }
+
+// fibonacci
+// public class Javabasics {
+// public static int fibonacci(int n) {
+// int a = 0;
+// int b = 1;
+// for (int i = 1; i <= n; i++) {
+// System.out.println(a + " ");
+// int next = a + b;
+// a = b;
+// b = next;
+// }
+// return n;
+// }
+
+// public static void main(String[] args) {
+// System.out.println(fibonacci(5));
+// }
+// }
+
+//binomial
+public class Javabasics {
+    public static int factorial(int fac) {
+        int fact = 1;
+        for (int i = 1; i <= fac; i++) {
+            fact = fact * i;
+        }
+        return fact;
+    }
+
+    public static int binomial(int n, int r) {
+        int n_fac = factorial(n);
+        int r_fac = factorial(r);
+        int nr_fac = factorial(n - r);
+        int bino = n_fac / (r_fac * nr_fac);
+        return bino;
+    }
+
+    public static void main(String[] args) {
+        int n = 5;
+        int r = 2;
+        int c = binomial(n, r);
+        System.out.println(c);
+
+    }
+}
