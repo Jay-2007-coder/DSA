@@ -1704,29 +1704,29 @@
 // }
 // }
 
-//binomial
-public class Javabasics {
-    public static int factorial(int fac) {
-        int fact = 1;
-        for (int i = 1; i <= fac; i++) {
-            fact = fact * i;
-        }
-        return fact;
-    }
+// binomial
+// public class Javabasics {
+// public static int factorial(int fac) {
+// int fact = 1;
+// for (int i = 1; i <= fac; i++) {
+// fact = fact * i;
+// }
+// return fact;
+// }
 
-    public static int binomial(int n, int r) {
-        int n_fac = factorial(n);
-        int r_fac = factorial(r);
-        int nr_fac = factorial(n - r);
-        int bino = n_fac / (r_fac * nr_fac);
-        return bino;
-    }
+// public static int binomial(int n, int r) {
+// int n_fac = factorial(n);
+// int r_fac = factorial(r);
+// int nr_fac = factorial(n - r);
+// int bino = n_fac / (r_fac * nr_fac);
+// return bino;
+// }
 
-    public static void main(String[] args) {
-        int n = 5;
-        int r = 2;
-        int c = binomial(n, r);
-        System.out.println(c);
+// public static void main(String[] args) {
+// int n = 5;
+// int r = 2;
+// int c = binomial(n, r);
+// System.out.println(c);
 
-    }
-}
+// }
+// }
