@@ -1853,24 +1853,43 @@
 // }
 // }
 
-//decimal to binary
-public class Javabasics {
-    public static void dectoBin(int n) {
-        int n1 = n;
-        int binNum = 0;
-        int pow = 0;
-        while (n > 0) {
-            int rem = n % 2;
-            binNum = binNum + rem * (int) Math.pow(10, pow);
-            pow++;
-            n = n / 2;
-        }
-        System.out.println("Decimal no = " + n1 + " and Binary No is " + binNum);
-    }
+// decimal to binary
+// public class Javabasics {
+// public static void dectoBin(int n) {
+// int n1 = n;
+// int binNum = 0;
+// int pow = 0;
+// while (n > 0) {
+// int rem = n % 2;
+// binNum = binNum + rem * (int) Math.pow(10, pow);
+// pow++;
+// n = n / 2;
+// }
+// System.out.println("Decimal no = " + n1 + " and Binary No is " + binNum);
+// }
 
-    public static void main(String[] args) {
-        int n = 7;
-        dectoBin(n);
+// public static void main(String[] args) {
+// int n = 7;
+// dectoBin(n);
 
-    }
-}
+// }
+// }
+
+// method scope
+// public class Javabasics {
+// public static void main(String[] args) {
+// System.out.println(s);
+// int s = 5;
+// } // Here the variable 's' is not defined
+// }
+
+// // Block scope
+// public class Javabasics {
+// public static void main(String[] args) {
+// {
+// int s = 5;
+
+// }
+// System.out.println(s);
+// }
+// } // int s is not defined
