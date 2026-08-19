@@ -1893,3 +1893,29 @@
 // System.out.println(s);
 // }
 // } // int s is not defined
+
+// palindrome
+// public class Javabasics {
+// public static boolean isPalindrome(int num) {
+// int OriginalNum = num;
+// int reverse = 0;
+// while (OriginalNum > 0) {
+// int lastdigit = OriginalNum % 10;
+// reverse = reverse * 10 + lastdigit;
+// OriginalNum = OriginalNum / 10;
+// }
+// if (num == reverse) {
+// return true;
+// }
+// return false;
+
+// }
+
+// public static void main(String[] args) {
+// if (isPalindrome(12121)) {
+// System.out.println("Is Palindrome");
+// } else {
+// System.out.println("Is Not Palindrome");
+// }
+// }
+// }
