@@ -1832,22 +1832,45 @@
 // }
 // }
 
-//binary to decimal 
+// binary to decimal
+// public class Javabasics {
+// public static void bintodec(int binnum) {
+// int binNum = binnum;
+// int pow = 0;
+// int decNum = 0;
+// while (binnum > 0) {
+// int lastdigit = binnum % 10;
+// decNum = decNum + lastdigit * (int) Math.pow(2, pow);
+// pow++;
+// binnum = binnum / 10;
+// }
+// System.out.println("The Binary No is " + binNum + " and decimal of it is " +
+// decNum);
+// }
+
+// public static void main(String[] args) {
+// bintodec(101);
+// }
+// }
+
+//decimal to binary
 public class Javabasics {
-    public static void bintodec(int binnum) {
-        int binNum = binnum;
+    public static void dectoBin(int n) {
+        int n1 = n;
+        int binNum = 0;
         int pow = 0;
-        int decNum = 0;
-        while (binnum > 0) {
-            int lastdigit = binnum % 10;
-            decNum = decNum + lastdigit * (int) Math.pow(2, pow);
+        while (n > 0) {
+            int rem = n % 2;
+            binNum = binNum + rem * (int) Math.pow(10, pow);
             pow++;
-            binnum = binnum / 10;
+            n = n / 2;
         }
-        System.out.println("The Binary No is " + binNum + " and decimal of it is " + decNum);
+        System.out.println("Decimal no = " + n1 + " and Binary No is " + binNum);
     }
 
     public static void main(String[] args) {
-        bintodec(101);
+        int n = 7;
+        dectoBin(n);
+
     }
 }
