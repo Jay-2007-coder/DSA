@@ -1730,3 +1730,50 @@
 
 // }
 // }
+
+// Function Overloading
+
+// overloading using Parameter
+// public class Javabasics {
+// public static int sum(int a, int b) {
+// return a + b;
+// }
+
+// public static int sum(int a, int b, int c) {
+// return a + b + c;
+// }
+
+// public static void main(String[] args) {
+// System.out.println(sum(1, 2));
+// System.out.println(sum(1, 2, 3));
+// }
+// }
+
+// overloading using Datatype
+// public class Javabasics {
+// public static int sum(int a, int b) {
+// return a + b;
+// }
+
+// public static int sum(int a, int b, int c) {
+// return a + b + c;
+// }
+
+// public static float sum(float a, float b) {
+// return a + b;
+// }
+
+// public static float sum(float a, int b) {
+// return a + b;
+// }
+
+// public static void main(String[] args) {
+// System.out.println(sum(1, 2));
+// System.out.println(sum(1, 2, 3));
+// System.out.println(sum(1.5f, 2.5f));
+// System.out.println(sum(5, 2.5f)); // here 5 is converted to 5.0f
+// System.out.println(sum(2.5f, 5)); // here 5 is int
+// //Java doesn't randomly choose. It prefers the method requiring less
+// conversion.
+// }
+// }
