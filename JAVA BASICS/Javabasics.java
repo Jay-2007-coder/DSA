@@ -1750,6 +1750,8 @@
 // }
 
 // overloading using Datatype
+
+// Same method name + different parameters = Method Overloading
 // public class Javabasics {
 // public static int sum(int a, int b) {
 // return a + b;
@@ -1775,5 +1777,57 @@
 // System.out.println(sum(2.5f, 5)); // here 5 is int
 // //Java doesn't randomly choose. It prefers the method requiring less
 // conversion.
+// }
+// }
+
+// optimised for prime numbers
+// public class Javabasics {
+// public static boolean prime(int n) {
+// if (n < 2) {
+// return false;
+// }
+// boolean prime = true;
+// for (int i = 2; i <= Math.sqrt(n); i++) {
+// if (n % i == 0) {
+// prime = false;
+// break;
+// }
+// }
+// return prime;
+// }
+
+// public static void main(String[] args) {
+// System.out.println(prime(2));
+// }
+// }
+
+// prime in range
+// public class Javabasics {
+// public static boolean prime(int n) {
+// if (n < 2) {
+// return false;
+// }
+// boolean prime = true;
+// for (int i = 2; i <= Math.sqrt(n); i++) {
+// if (n % i == 0) {
+// prime = false;
+// break;
+// }
+// }
+// return prime;
+// }
+
+// public static void primerange(int n) {
+// for (int i = 2; i <= n; i++) {
+// if (prime(i)) {
+// System.out.print(i + " ");
+// }
+// }
+// }
+
+// public static void main(String[] args) {
+// int n = 50;
+// primerange(n);
+
 // }
 // }
