@@ -92,11 +92,27 @@ public class advancePattern {
 
     public static void solidrombus(int n) {
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= (n - i + 1); j++) {
+            for (int j = 1; j <= (n - i); j++) {
                 System.out.print("  ");
             }
             for (int j = 1; j <= n; j++) {
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void Hollow_Rhombus(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || i == n || j == 1 || j == n) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
             }
             System.out.println();
         }
@@ -108,7 +124,8 @@ public class advancePattern {
         // Floyds_Triangle(5);
         // Triangle01(5);
         // butterfly(4);
-        solidrombus(5);
+        // solidrombus(5);
+        Hollow_Rhombus(5);
 
     }
 
