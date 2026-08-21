@@ -1919,3 +1919,64 @@
 // }
 // }
 // }
+
+// palindrome
+// public class Javabasics {
+// public static void main(String args[]) {
+// if (palindrome(1231321)) {
+// System.out.println("The no is Palindrome");
+// } else {
+// System.out.println("The no is not Palindrome");
+// }
+// }
+
+// public static boolean palindrome(int n) {
+// int original = n;
+// int reverse = 0;
+// while (original > 0) {
+// int LD = original % 10;
+// reverse = reverse * 10 + LD;
+// original = original / 10;
+// }
+// if (n == reverse) {
+// return true;
+// }
+// return false;
+// }
+// }
+
+// decimal to binary
+// public class Javabasics {
+// public static void main(String args[]) {
+// int decToBin = 5, binToDec = 101;
+// decToBin(decToBin);
+// binToDec(binToDec);
+// }
+
+// public static void decToBin(int decno) {
+// int n = decno;
+// int binary = 0;
+// int pow = 0;
+// while (n > 0) {
+// int rem = n % 2;
+// binary = binary + (rem * (int) Math.pow(10, pow));
+// pow++;
+// n = n / 2;
+// }
+// System.out.println("Decimal no = " + decno + " and Binary No is " + binary);
+
+// }
+
+// public static void binToDec(int binno) {
+// int n = binno;
+// int decimal = 0;
+// int pow = 0;
+// while (n > 0) {
+// int lastno = n % 10;
+// decimal = decimal + (lastno * (int) Math.pow(2, pow));
+// pow++;
+// n = n / 10;
+// }
+// System.out.println("Binary no = " + binno + " and Decimal No is " + decimal);
+// }
+// }
