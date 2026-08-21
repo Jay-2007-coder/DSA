@@ -118,6 +118,27 @@ public class advancePattern {
         }
     }
 
+    public static void Diamond(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         // inverted_rotated_hal_pyramid(5);
         // Inverted_half_pyramid_numbers(5);
@@ -125,7 +146,8 @@ public class advancePattern {
         // Triangle01(5);
         // butterfly(4);
         // solidrombus(5);
-        Hollow_Rhombus(5);
+        // Hollow_Rhombus(5);
+        Diamond(5);
 
     }
 
