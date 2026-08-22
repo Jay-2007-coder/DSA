@@ -79,10 +79,57 @@
 // }
 // }
 
+// public class arr {
+//     public static void main(String[] args) {
+//         int marks[] = new int[50];
+//         System.out.println(marks.length);
+
+//     }
+// }
+
+// public class arr {
+//     public static void main(String[] args) {
+//         int[] a = { 1, 2, 3 };
+//         int[] b = a;// b now points to the SAME array as a
+
+//         b[0] = 99;
+//         System.out.println(a[0]); // prints 99, not 1!
+
+//     }
+// }
+
+//call by refernce
+// public class arr {
+//     static void change(int array[]) {
+//         array = new int[] { 100, 200, 300 };
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = { 10, 20, 30 };
+
+//         change(arr);
+
+//         System.out.println(arr[0]);
+//     }
+// }
+
 public class arr {
+    public static void update(int array[]) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = array[i] + 1;
+        }
+    }
+
     public static void main(String[] args) {
-        int marks[] = new int[50];
-        System.out.println(marks.length);
+        // int marks[] = new int[20];
+        // marks[0] = 1;
+        // marks[1] = 4;
+        // marks[2] = 5;
+        int marks[] = { 10, 20, 30 };
+        update(marks);
+        for (int i = 0; i < marks.length; i++) {
+            System.out.println(marks[i]);
+        }
 
     }
 }
