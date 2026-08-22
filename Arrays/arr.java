@@ -158,25 +158,45 @@
 //     }
 // }
 
+// public class arr {
+//     public static int linearSearch(String array[], String key) {
+//         for (int i = 0; i <= array.length; i++) {
+//             if (array[i] == key) {
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     }
+
+//     public static void main(String args[]) {
+//         String array[] = { "apple", "banana", "kiwi", "mango" };
+//         String key = "kiwi";
+//         int index = linearSearch(array, key);
+//         if (index == -1) {
+//             System.out.println("Element not found");
+//         } else {
+//             System.out.println("Element found at index " + index);
+//         }
+
+//     }
+// }
+
+import java.util.*;
+
 public class arr {
-    public static int linearSearch(String array[], String key) {
-        for (int i = 0; i <= array.length; i++) {
-            if (array[i] == key) {
-                return i;
+    public static int LargestNumber(int array[]) {
+        int largest = Integer.MIN_VALUE; // -infinity
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > largest) {
+                largest = array[i];
             }
         }
-        return -1;
+        return largest;
+
     }
 
     public static void main(String args[]) {
-        String array[] = { "apple", "banana", "kiwi", "mango" };
-        String key = "kiwi";
-        int index = linearSearch(array, key);
-        if (index == -1) {
-            System.out.println("Element not found");
-        } else {
-            System.out.println("Element found at index " + index);
-        }
-
+        int array[] = { 1, 2, 6, 3, 5 };
+        System.out.println(LargestNumber(array));
     }
 }
