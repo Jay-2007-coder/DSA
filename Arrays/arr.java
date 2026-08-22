@@ -181,22 +181,24 @@
 //     }
 // }
 
+// 
+
 import java.util.*;
 
 public class arr {
-    public static int LargestNumber(int array[]) {
-        int largest = Integer.MIN_VALUE; // -infinity
+    public static int SmallestNumber(int array[]) {
+        int smallest = Integer.MAX_VALUE; // +infinity
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > largest) {
-                largest = array[i];
+            if (array[i] < smallest) {
+                smallest = array[i];
             }
         }
-        return largest;
+        return smallest;
 
     }
 
     public static void main(String args[]) {
-        int array[] = { 1, 2, 6, 3, 5 };
-        System.out.println(LargestNumber(array));
+        int array[] = { 1, 2, 6, 3, 5, 0 };
+        System.out.println(SmallestNumber(array));
     }
 }
