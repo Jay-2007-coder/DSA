@@ -144,10 +144,10 @@ public class advancePattern {
         // Inverted_half_pyramid_numbers(5);
         // Floyds_Triangle(5);
         // Triangle01(5);
-        // butterfly(4);
+        butterfly(4);
         // solidrombus(5);
         // Hollow_Rhombus(5);
-        Diamond(5);
+        // Diamond(5);
 
     }
 
