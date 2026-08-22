@@ -204,32 +204,55 @@
 // }
 
 //Binary Search
+// public class arr {
+//     public static int binarySearch(int array[], int key) {
+//         int start = 0;
+//         int end = array.length - 1;
+//         while (start <= end) {
+//             int mid = (start + end) / 2;
+//             if (array[mid] == key) {
+//                 return mid;
+//             }
+//             if (array[mid] > key) {
+//                 end = mid - 1;
+//             } else {
+//                 start = mid + 1;
+//             }
+//         }
+//         return -1;
+//     }
+
+//     public static void main(String args[]) {
+//         int array[] = { 2, 4, 6, 8, 10, 12, 14 };
+//         int key = 10;
+//         int index = binarySearch(array, key);
+//         if (index == -1) {
+//             System.out.println("Element not found");
+//         } else {
+//             System.out.println("Element found at index " + index);
+//         }
+//     }
+// }
+
+//reverse an array
 public class arr {
-    public static int binarySearch(int array[], int key) {
+    public static void ReverseArray(int array[]) {
         int start = 0;
         int end = array.length - 1;
-        while (start <= end) {
-            int mid = (start + end) / 2;
-            if (array[mid] == key) {
-                return mid;
-            }
-            if (array[mid] > key) {
-                end = mid - 1;
-            } else {
-                start = mid + 1;
-            }
+        while (start < end) {
+            int temp = array[end];
+            array[end] = array[start];
+            array[start] = temp;
+            start++;
+            end--;
         }
-        return -1;
     }
 
-    public static void main(String args[]) {
-        int array[] = { 2, 4, 6, 8, 10, 12, 14 };
-        int key = 10;
-        int index = binarySearch(array, key);
-        if (index == -1) {
-            System.out.println("Element not found");
-        } else {
-            System.out.println("Element found at index " + index);
+    public static void main(String[] args) {
+        int array[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        ReverseArray(array);
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
         }
     }
 }
